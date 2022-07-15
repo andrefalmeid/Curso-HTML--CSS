@@ -13,6 +13,12 @@ h2 {
   font-size: 20px;
 }
 
+header {
+  position: sticky;
+  top: 0;
+}
+
+
 /*navbar*/
 #navbar {
   background-color: #273a73;
@@ -20,6 +26,7 @@ h2 {
   padding: 0 15px;
   height: 60px;
 }
+
 #navbar h2,
 #navbar ul,
 #navbar-list li,
@@ -38,6 +45,7 @@ h2 {
   position: absolute;
   top: 10px;
 }
+
 #navbar nav {
   float: right;
 }
@@ -45,13 +53,16 @@ h2 {
 #navbar li {
   margin: 0 10px;
 }
+
 #navbar ul {
   float: right;
 }
+
 #navbar-list li a {
   text-decoration: none;
   color: #f2e8d5;
 }
+
 #navbar-list li a:hover {
   border-bottom: 1px solid #f2e8d5;
 }
@@ -60,9 +71,11 @@ h2 {
 #main-banner {
   height: 70vh;
   background-image: url(../img/Foguete1.png);
+  background-attachment: fixed;
   background-size: cover;
   padding-top: 15vh;
 }
+
 #banner-info {
   width: 40%;
   margin-right: auto;
@@ -71,6 +84,7 @@ h2 {
   color: #f2e8d5;
   padding: 50px;
 }
+
 #banner-info img {
   height: 120px;
   border-radius: 50%;
@@ -96,9 +110,11 @@ h2 {
   padding-top: 50px;
   height: 350px;
 }
+
 #about-section h2 {
   margin-bottom: 20px;
 }
+
 #about-section p {
   max-width: 650px;
   margin-right: auto;
@@ -107,7 +123,7 @@ h2 {
 }
 
 /*skills*/
-#skills-section{
+#skills-section {
   margin-top: -100px;
   background-color: #f2e8d5;
   width: 80%;
@@ -116,27 +132,32 @@ h2 {
   border: 1px solid #DDD;
   border-radius: 10px;
 }
+
 #skills-section .container {
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
 }
-.skills-container{
+
+.skills-container {
   flex: 1;
   text-align: center;
   padding: 60px 25px;
-  
+
 }
+
 .central {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
 
 }
-.skills-container h3{
+
+.skills-container h3 {
   color: #273a73;
   font-size: 20px;
 }
-.skills-container img{
+
+.skills-container img {
   height: 60px;
   padding: 15px;
   margin-bottom: 25px;
@@ -145,12 +166,58 @@ h2 {
   border-bottom: 4px solid #273a73;
   border-right: 4px solid #273a73;
 }
-.skills-container .subtitle{
+
+.skills-container .subtitle {
   font-weight: bold;
   color: #273a73;
   margin-top: 50px;
   margin-top: 15px;
 }
-.skills-container .p{
+
+.skills-container .p {
   line-height: 25px;
+}
+
+/*jobs*/
+#jobs-section{
+  text-align: center;
+  padding-top: 50px;
+}
+#jobs-section h2{
+  color: #273a73;
+  margin-bottom: 30px;
+}
+#jobs-section p{
+  margin-bottom:50px;
+}
+#jobs-section a{
+  font-weight: bold;
+  color: #273a73;
+}
+.job-container{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-around;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+.job-box{
+  flex:1 1 200px;
+  margin-left: 25px;
+  margin-right: 25px;
+  height: 300px;
+  background-size: cover;
+  border-right: 2px solid #f26457;
+  border-bottom: 2px solid #f26457;
+}
+.proj1{
+  background-image: url(../img/proj1.jpg);  
+}
+.proj2{
+  background-image: url(../img/proj2.jpg);
+}
+.proj3{
+  background-image: url(../img/proj3.jpg);
 }
